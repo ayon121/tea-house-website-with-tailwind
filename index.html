@@ -7,6 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
     <title>Tea House</title>
+    <!-- tailwind custom -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+              }
+            }
+          }
+        }
+      </script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/d27eb0bddb.js" crossorigin="anonymous"></script>
     <!-- daisyui -->
@@ -127,7 +138,7 @@
                 <div class="space-y-5">
                     <h3 class="text-3xl font-extrabold text-white">Meet Our Super <br> Clients</h3>
                     <p class="text-white"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] border-black text-white">Show All</button>
                 </div>
             </div>
             <!-- review container -->
@@ -168,5 +179,55 @@
         </section>
     </main>
     <!-- this is footer section -->
+    <footer class="p-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24 lg:px-10">
+            <img src="./images/cup.png" alt="">
+            <p>Ready to get strated?
+                <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-white">Get Started</button>
+            </p>
+            
+        </div>
+        <div class="footer lg:px-10">
+            <div>
+                <span class="footer-title">Services</span> 
+                <a class="link link-hover">Branding</a> 
+                <a class="link link-hover">Design</a> 
+                <a class="link link-hover">Marketing</a> 
+                <a class="link link-hover">Advertisement</a>
+            </div> 
+            <div>
+                <span class="footer-title">Company</span> 
+                <a class="link link-hover">About us</a> 
+                <a class="link link-hover">Contact</a> 
+                <a class="link link-hover">Jobs</a> 
+                <a class="link link-hover">Press kit</a>
+            </div> 
+            <div>
+                <span class="footer-title">Legal</span> 
+                <a class="link link-hover">Terms of use</a> 
+                <a class="link link-hover">Privacy policy</a> 
+                <a class="link link-hover">Cookie policy</a>
+            </div> 
+            <div>
+                <span class="footer-title">Newsletter</span> 
+                <div class="form-control w-80">
+                <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                </label> 
+                <div class="relative">
+                    <input type="text" placeholder="username@site.com" class="py-3 bg-transparent border-b-2 border-black outline-none" /> 
+                    <button class="btn absolute top-0 right-0 rounded-l-none  bg-gradient-to-r from-[#FF8938] to-[#F00] text-white ">Subscribe</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="mt-4 text-center">
+                <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+            </div>
+            
+        </div>
+</footer>
+
 </body>
 </html>
